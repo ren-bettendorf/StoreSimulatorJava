@@ -18,25 +18,30 @@ class Customer
         arrivalTime = arrivaltime;
     }
 
-    int getTransactionTime(){    
+    int getTransactionTime()
+    {    
     	return transactionTime;
     }
 
-    int getArrivalTime(){
+    int getArrivalTime()
+    {
     	return arrivalTime;
     }
 
-    int getCustomerID(){
+    int getCustomerID()
+    {
     	return customerID; 
     }
 
-    public String toString(){
+    public String toString()
+    {
     	return ""+customerID+":"+transactionTime+":"+arrivalTime;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
     	// quick check!
-    	Customer mycustomer = new Customer(20,30,40);
+    	Customer mycustomer = new Customer(20, 30, 40);
     	System.out.println("Customer Info:" + mycustomer);
 
     }
